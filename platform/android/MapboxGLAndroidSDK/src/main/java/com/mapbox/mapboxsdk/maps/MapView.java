@@ -297,7 +297,7 @@ public class MapView extends FrameLayout implements NativeMapView.ViewCallback {
 
       addView(textureView, 0);
     } else {
-      MapboxGLSurfaceView glSurfaceView = new MapboxGLSurfaceView(getContext());
+      MapboxGLSurfaceView glSurfaceView = new MapboxGLSurfaceView(getContext()); //TODO: do more research in MapboxGLSurfaceView
       glSurfaceView.setZOrderMediaOverlay(mapboxMapOptions.getRenderSurfaceOnTop());
       mapRenderer = new GLSurfaceViewMapRenderer(getContext(), glSurfaceView, localFontFamily) {
         @Override
